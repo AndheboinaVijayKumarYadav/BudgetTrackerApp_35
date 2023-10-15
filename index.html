@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudgetTrackerApp</title>
+    <!-- Added the favicon and linked the style.css file -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+     <main>
+        <div class="outer-wrap">
+            <div class="inner-wrap">
+                <!-- heading section -->
+                <section class="heading">
+                    <p class="title">Budget Tracker App</p>
+                    <p class="subtitle">Easiest Way To Track Your Transactions!</p>
+                </section>
+                <!-- Transaction section -->
+                <section class="transaction-control">
+                    <div class="actions">
+                        <h3>Add Transaction</h3>
+                        <form  class="add">
+                            <input type="text" name="source" placeholder="Source" autocomplete="off">
+                            <input type="number" name="amount" placeholder="Amount" autocomplete="off">
+                            <input type="submit" value="Add Transaction">
+                        </form>
+                    </div>
+                    <div class="stats">
+                        <h3>Statistics</h3>
+                        <p class="balance">Balance: ₹<span id="balance">650</span></p>
+                        <p class="income">Income: ₹<span id="income">650</span></p>
+                        <p class="expense">Expense: ₹<span id="expense">650</span></p>
+                    </div>
+                </section>
+                <!-- Transaction history section -->
+                <section class="transaction-history">
+                    <!-- income div -->
+                    <h3>Transaction History</h3>
+                    <div class="records">
+                        <div class="income">
+                            <h3>Income</h3>
+                            <ul class="income-list">
+                                <li>
+                                    <p>
+                                        <span>Freelancing - JS Projects</span>
+                                        <span id="time">10:43:06 AM 10/15/2023</span>
+                                    </p>
+                                    <span> ₹100</span>
+                                    <i class="bi bi-trash delete"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- expense div -->
+                        <div class="expense">
+                            <h3>Expense</h3>
+                            <ul class="expense-list">
+                                <li>
+                                    <p>
+                                        <span>Stream Recording</span>
+                                        <span id="time">10:43:06 AM 10/15/2023</span>
+                                    </p>
+                                    <span> ₹50</span>
+                                    <i class="bi bi-trash delete"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+     </main>
+</body>
+</html>
